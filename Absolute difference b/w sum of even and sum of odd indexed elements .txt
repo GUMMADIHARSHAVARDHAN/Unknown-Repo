@@ -1,0 +1,13 @@
+n = int(input())
+lst = list(map(int,input().split()))
+sume=0
+sumo=0
+for i in range(0,len(lst)):
+    if i%2==0:
+        sume += lst[i]
+    else :
+        sumo += lst[i]
+if(sume>sumo):
+    print(sume-sumo)
+else :
+    print(sumo-sume)
